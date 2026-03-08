@@ -9,3 +9,4 @@ Route::get('/', function () {
 
 Route::get('/connect-gmail', [GmailController :: class, 'connectGmail']);
 Route::get('/auth/google/callback', [GmailController::class, 'callback']);
+Route::get('/sync-emails/{userId}', [GmailController::class, 'syncEmails']);
